@@ -1,7 +1,7 @@
 # ⚽ FutVision
 
 🔗 **Acesse o projeto online:**  
-👉 https://futvisionprojectweb.vercel.app/
+👉 https://futvisionweb.vercel.app
 
 📂 **Repositório no GitHub:**  
 👉 https://github.com/EduardoColombari/FutVision
