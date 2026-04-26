@@ -1,0 +1,56 @@
+.team-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 20px;
+  transition: border-color 0.2s, background 0.2s;
+  color: inherit;
+}
+
+.team-card:hover {
+  border-color: var(--green);
+  background: var(--bg-elevated);
+  box-shadow: 0 0 0 1px var(--green-glow);
+}
+
+.team-card-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.team-card-crest {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.team-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.team-card-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.team-card-league {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.team-card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}

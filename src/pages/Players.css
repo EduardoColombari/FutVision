@@ -1,0 +1,96 @@
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.player-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  color: inherit;
+}
+
+.player-card:hover {
+  border-color: var(--green);
+  box-shadow: 0 0 0 1px var(--green-glow);
+}
+
+.player-img-wrap {
+  background: var(--bg-elevated);
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.player-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.player-img-placeholder {
+  font-size: 4rem;
+  opacity: 0.15;
+  padding-bottom: 16px;
+}
+
+.player-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.player-name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-h);
+}
+
+.player-team {
+  font-size: 0.8rem;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.player-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.player-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.player-tag--nat {
+  color: var(--text);
+}
+
+.player-tag--status.active {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.player-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
