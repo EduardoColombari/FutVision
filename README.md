@@ -135,6 +135,42 @@ Este projeto está sob a licença **MIT**. Sinta-se à vontade para utilizá-lo 
 
 ---
 
+## 🏗️ Arquitetura da Aplicação
+
+A arquitetura do **FutVision** segue uma estrutura modular e organizada, utilizando os seguintes conceitos:
+
+- **Páginas (`src/pages`)**: Contém as páginas principais da aplicação, como Home, About, Compare, etc.
+- **Componentes (`src/components`)**: Componentes reutilizáveis, como `LeagueCard` e `TeamCard`.
+- **Serviços (`src/services`)**: Responsável por chamadas à API externa (ex.: `footballApi.js`).
+- **Hooks (`src/hooks`)**: Custom hooks para lógica reutilizável.
+- **Estilos (`src/*.css`)**: Arquivos CSS para estilização de componentes e páginas.
+- **Assets (`src/assets`)**: Recursos estáticos como imagens e ícones.
+- **Utils (`src/utils`)**: Funções utilitárias, como traduções.
+
+### Diagrama da Arquitetura
+
+```mermaid
+graph TD
+    A[Usuário] -->|Interação| B[Interface React]
+    B -->|Componentes| C[Páginas]
+    C -->|Navegação| D[React Router DOM]
+    C -->|Dados| E[Serviços - Axios]
+    E -->|API Requests| F[TheSportsDB API]
+    C -->|Estilos| G[CSS]
+```
+
+---
+
+## 🗂️ Boas Práticas de Versionamento
+
+O código-fonte do **FutVision** está versionado no GitHub. Para garantir um bom fluxo de trabalho, siga estas práticas:
+
+- **Commits descritivos**: Use mensagens claras e objetivas, como `git commit -m 'Adiciona funcionalidade de comparação de jogadores'`.
+- **Branches organizadas**: Crie branches específicas para cada feature ou correção, como `feature/comparacao-jogadores`.
+- **Pull Requests**: Sempre abra um Pull Request para revisão antes de mesclar alterações na branch principal.
+
+---
+
 ## 📊 Informações do Projeto
 
 | Faculdade       | Curso                  | Autor              |
