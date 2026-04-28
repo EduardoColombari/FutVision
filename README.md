@@ -59,3 +59,84 @@ O projeto foi criado com foco em **performance, organização de código e exper
 
 ```bash
 git clone https://github.com/EduardoColombari/FutVision.git
+cd FutVision
+```
+
+### 2. Instale as dependências
+
+Certifique-se de ter o **Node.js** instalado na sua máquina. Em seguida, execute:
+
+```bash
+npm install
+```
+
+### 3. Inicie o servidor de desenvolvimento
+
+Para rodar o projeto localmente, utilize o comando:
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em: [http://localhost:5173](http://localhost:5173)
+
+### 4. Build para produção
+
+Para gerar uma versão otimizada para produção, execute:
+
+```bash
+npm run build
+```
+
+Os arquivos otimizados estarão na pasta `dist/`.
+
+### 5. Pré-visualizar o build
+
+Para pré-visualizar o build gerado, utilize:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🤝 Como Contribuir
+
+1. Faça um fork do projeto.  
+2. Crie uma nova branch com a sua feature: `git checkout -b minha-feature`.  
+3. Commit suas alterações: `git commit -m 'Adicionando nova feature'`.  
+4. Envie para a sua branch: `git push origin minha-feature`.  
+5. Abra um Pull Request no repositório original.
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT**. Sinta-se à vontade para utilizá-lo e modificá-lo conforme necessário.
+
+---
+
+## 📷 Capturas de Tela
+
+### Página Principal
+![Página Principal](public/images/image.png)
+
+### Página de Classificação
+![Página de Classificação](public/images/image-1.png)
+
+### Página de Jogos
+![Página de Jogos](public/images/image-2.png)
+
+### Página de Jogadores
+![Página de Jogadores](public/images/image-3.png)
+
+### Página de Comparação de Times
+![Página de Comparação de Times](public/images/image-4.png)
+
+---
+
+## 📊 Informações do Projeto
+
+| Faculdade       | Curso                  | Autor              |
+|-----------------|------------------------|--------------------|
+| Uni-FACEF       | Engenharia de Software | Eduardo Colombari  |
